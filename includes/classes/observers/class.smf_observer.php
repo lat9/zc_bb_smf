@@ -45,7 +45,7 @@ class smf_observer extends base {
     const STATUS_UNKNOWN_ERROR   = 'unknown_error';
     const STATUS_NICK_NOT_FOUND  = 'nick_not_found';
     
-  function smf_observer() {
+  function __construct () {
     $this->installed = false;
     $this->debug_info = array();
     $this->debug = (defined('SMF_DEBUG') && SMF_DEBUG == 'true') ? true : false;
